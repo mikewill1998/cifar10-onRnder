@@ -7,7 +7,7 @@ from PIL import Image
 
 # load model
 
-model = torchvision.models.resnet50(weights=None)
+model = torchvision.models.resnet50()
 model.fc = nn.Linear(in_features=2048, out_features=10, bias=False)
 
 
